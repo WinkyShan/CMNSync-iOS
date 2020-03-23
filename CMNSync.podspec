@@ -13,10 +13,10 @@ Pod::Spec.new do |s|
   s.summary          = 'A short description of CMNSync.'
   s.description      = 'CMN'
 
-  s.homepage         = 'https://github.com/WinkyShan/CMNSync.git'
+  s.homepage         = 'https://github.com/WinkyShan/CMNSync-iOS.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'WinkyShan' => '2297971509@qq.com' }
-  s.source           = { :git => 'https://github.com/WinkyShan/CMNSync.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/WinkyShan/CMNSync-iOS.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '10.0'
   
