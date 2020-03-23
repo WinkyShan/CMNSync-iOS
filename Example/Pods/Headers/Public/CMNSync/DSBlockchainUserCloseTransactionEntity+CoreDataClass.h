@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/Entities/DSBlockchainUserCloseTransactionEntity+CoreDataClass.h

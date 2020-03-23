@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/Entities/DSSpecialTransactionEntity+CoreDataProperties.h

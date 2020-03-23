@@ -1,0 +1,1 @@
+../../../../../CMNSync/Categories/NSManagedObject+Sugar.h

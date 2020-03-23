@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/Entities/DSChainLockEntity+CoreDataClass.h

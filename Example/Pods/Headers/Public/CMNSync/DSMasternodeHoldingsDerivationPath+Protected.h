@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/Derivation Paths/DSMasternodeHoldingsDerivationPath+Protected.h

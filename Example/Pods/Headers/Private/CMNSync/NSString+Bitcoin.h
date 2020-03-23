@@ -1,0 +1,1 @@
+../../../../../CMNSync/Categories/NSString+Bitcoin.h
