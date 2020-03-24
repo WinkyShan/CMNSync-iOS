@@ -9,7 +9,7 @@
 Pod::Spec.new do |s|
 
   s.name             = 'CMNSync'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'A short description of CMNSync.'
   s.description      = 'CMN'
 
@@ -29,7 +29,7 @@ Pod::Spec.new do |s|
   s.resource_bundles = {'CMNSync' => ['CMNSync/*.xcdatamodeld', 'CMNSync/*.plist', 'CMNSync/*.lproj', 'CMNSync/MasternodeLists/*.dat']}
   
   s.framework = 'Foundation', 'UIKit', 'SystemConfiguration', 'CoreData', 'BackgroundTasks'
-  #s.compiler_flags = '-Wno-comma'
+  s.compiler_flags = '-Wno-comma'
   s.dependency 'secp256k1_dash', '0.1.2'
   s.dependency 'bls-signatures-pod', '0.2.9'
   s.dependency 'CocoaLumberjack', '3.6.0'
