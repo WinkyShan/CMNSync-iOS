@@ -1,1 +1,0 @@
-../../../../../CMNSync/Models/Entities/DSGovernanceObjectHashEntity+CoreDataClass.h

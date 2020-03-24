@@ -63,7 +63,7 @@
 "Couldn't make payment" = "Couldn't make payment";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Dash payments can't be less than %@";
+"Dash payments can't be less than %@" = "CMN payments can't be less than %@";
 
 /* No comment provided by engineer. */
 "Dash transaction not signed" = "Dash transaction not signed";

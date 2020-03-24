@@ -1,1 +1,0 @@
-../../../../../CMNSync/Models/Transactions/Coinbase/DSCoinbaseTransaction.h

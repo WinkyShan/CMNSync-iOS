@@ -1,1 +1,0 @@
-../../../TinyCborObjc/TinyCborObjc/NSObject+DSCborEncoding.h

@@ -1,1 +1,0 @@
-../../../../../CMNSync/Models/Entities/DSBlockchainUserResetTransactionEntity+CoreDataProperties.h
