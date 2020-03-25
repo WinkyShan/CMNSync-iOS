@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     jumlah %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nALAMAT SUDAH DIGUNAKAN\nAlamat Dash dimaksudkan hanya untuk sekali pakai\n\nmenggunakan kembali mengurangi privasi untuk Anda dan penerima dan dapat mengakibatkan kerugian jika penerima tidak secara langsung mengontrol alamat";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nALAMAT SUDAH DIGUNAKAN\nAlamat CMN dimaksudkan hanya untuk sekali pakai\n\nmenggunakan kembali mengurangi privasi untuk Anda dan penerima dan dapat mengakibatkan kerugian jika penerima tidak secara langsung mengontrol alamat";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nbiaya jaringan +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Tidak dapat melakukan pembayaran";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Pembayaran Dash tidak boleh kurang dari %@";
+"Dash payments can't be less than %@" = "Pembayaran CMN tidak boleh kurang dari %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Transaksi Dash tidak ditandatangani";
+"Dash transaction not signed" = "Transaksi CMN tidak ditandatangani";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Transaksi jumlah total Dash tidak boleh kurang dari %@";
+"Dash transaction outputs can't be less than %@" = "Transaksi jumlah total CMN tidak boleh kurang dari %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Dana tidak mencukupi";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Dana tidak mencukupi untuk biaya jaringan Dash";
+"Insufficient funds for Dash network fee" = "Dana tidak mencukupi untuk biaya jaringan CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Kesalahan internal";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Bukan kunci pribadi yang valid";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Tidak terhubung ke jaringan Dash";
+"Not connected to the Dash network" = "Tidak terhubung ke jaringan CMN";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

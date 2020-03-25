@@ -18,10 +18,13 @@
 #import "DSFetchDashRetailPricesOperation.h"
 
 #import "DSHTTPDashRetailOperation.h"
-
+//MARK - 引入头文件
+#import "DSCurrencyPriceObject.h"
 NS_ASSUME_NONNULL_BEGIN
 
-#define DASHRETAIL_TICKER_URL @"https://rates2.dashretail.org/rates?source=dashretail"
+//MARK - 修改本地货币价格获取链接
+//#define DASHRETAIL_TICKER_URL @"https://rates2.dashretail.org/rates?source=dashretail"
+#define DASHRETAIL_TICKER_URL @"https://api.codemason.xyz/rate"
 
 @interface DSFetchDashRetailPricesOperation ()
 
@@ -36,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (DSOperation *)initOperationWithCompletion:(void (^)(NSArray<DSCurrencyPriceObject *> *_Nullable, NSString *priceSource))completion {
     self = [super initWithOperations:nil];
     if (self) {
+        //MARK - 本地货币1链接
         HTTPRequest *request = [HTTPRequest requestWithURL:[NSURL URLWithString:DASHRETAIL_TICKER_URL]
                                                     method:HTTPRequestMethod_GET
                                                 parameters:nil];
@@ -57,6 +61,10 @@ NS_ASSUME_NONNULL_BEGIN
     }
 
     NSArray<DSCurrencyPriceObject *> *prices = self.dashRetailOperation.prices;
+    //MARK - 打印数据
+    for (DSCurrencyPriceObject *currency in prices) {
+        NSLog(@"1----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+    }
     self.fetchCompletion(prices, [self.class priceSourceInfo]);
 }
 

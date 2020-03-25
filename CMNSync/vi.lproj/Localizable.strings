@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     số lượng %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nĐỊA CHỈ ĐÃ ĐƯỢC SỬ DỤNG\nĐịa chỉ Dash được thiết kế để sử dụng chỉ một lần\n\ntái sử dụng sẽ làm giảm độ riêng tư cho cả bạn và người nhận và có thể dẫn đến mất tiền nếu người nhận không quản lý trực tiếp địa chỉ đó";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nĐỊA CHỈ ĐÃ ĐƯỢC SỬ DỤNG\nĐịa chỉ CMN được thiết kế để sử dụng chỉ một lần\n\ntái sử dụng sẽ làm giảm độ riêng tư cho cả bạn và người nhận và có thể dẫn đến mất tiền nếu người nhận không quản lý trực tiếp địa chỉ đó";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nphí giao dịch +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Không thể thực hiện thanh toán";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Số Dash thanh toán không thể nhỏ hơn %@";
+"Dash payments can't be less than %@" = "Số CMN thanh toán không thể nhỏ hơn %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Giao dịch Dash không được ký";
+"Dash transaction not signed" = "Giao dịch CMN không được ký";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Đầu ra của giao dịch Dash không thể ít hơn %@";
+"Dash transaction outputs can't be less than %@" = "Đầu ra của giao dịch CMN không thể ít hơn %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Mạng cho phát triển";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Không đủ tiền";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Không đủ tiền phí cho mạng lưới Dash";
+"Insufficient funds for Dash network fee" = "Không đủ tiền phí cho mạng lưới CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Lỗi bên trong";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Không phải một khoá riêng hợp lệ";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Chưa được kết nối với mạng lưới của Dash";
+"Not connected to the Dash network" = "Chưa được kết nối với mạng lưới của CMN";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\nСумма: %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nАДРЕС УЖЕ ИСПОЛЬЗОВАН\nАдреса Dash предназначены для разового использования\n\nповторное использование адреса снижает приватность как для Вас, так и для получателя и может привести к потере средств, если получатель больше не контролирует этот адрес";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nАДРЕС УЖЕ ИСПОЛЬЗОВАН\nАдреса CMN предназначены для разового использования\n\nповторное использование адреса снижает приватность как для Вас, так и для получателя и может привести к потере средств, если получатель больше не контролирует этот адрес";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nКомиссия сети: +%1$@ (%2$@)";
@@ -63,7 +63,7 @@
 "Couldn't make payment" = "Не удалось совершить платёж";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Платежи Dash не могут быть меньше, чем %@";
+"Dash payments can't be less than %@" = "Платежи CMN не могут быть меньше, чем %@";
 
 /* No comment provided by engineer. */
 "Dash transaction not signed" = "Транзакция не подписана";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Недостаточно средств";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Недостаточно средств для оплаты комиссии сети Dash";
+"Insufficient funds for Dash network fee" = "Недостаточно средств для оплаты комиссии сети CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Внутренняя ошибка";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Некорректный приватный ключ";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Нет подключения к сети Dash";
+"Not connected to the Dash network" = "Нет подключения к сети CMN";
 
 /* No comment provided by engineer. */
 "OK" = "ОК";

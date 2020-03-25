@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     送金額 %1$@ （%2$@）";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\n使用済みアドレス\nDashアドレスの使用回数は1回だけにしてください。\n\nアドレスの再利用はあなたと送金先のプライバシーを低下させます。もし受け手がそのアドレスを直接管理していない場合は、資金が失われる可能性もあります";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\n使用済みアドレス\nCMNアドレスの使用回数は1回だけにしてください。\n\nアドレスの再利用はあなたと送金先のプライバシーを低下させます。もし受け手がそのアドレスを直接管理していない場合は、資金が失われる可能性もあります";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nネットワーク手数料 +%1$@ （%2$@）";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "支払いを完了できませんでした";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Dashの送金は %@ 以上でないと送れません";
+"Dash payments can't be less than %@" = "CMNの送金は %@ 以上でないと送れません";
 
 /* No comment provided by engineer. */
 "Dash transaction not signed" = "取引が署名されていません";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dashの取引出力は %@ 以上でないといけません";
+"Dash transaction outputs can't be less than %@" = "CMNの取引出力は %@ 以上でないといけません";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "資金不足";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Dashネットワーク手数料を含めると残高が足りません";
+"Insufficient funds for Dash network fee" = "CMNネットワーク手数料を含めると残高が足りません";
 
 /* No comment provided by engineer. */
 "Internal Error" = "内部エラー";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "有効な秘密鍵ではありません";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Dashネットワークに接続されていません。";
+"Not connected to the Dash network" = "CMNネットワークに接続されていません。";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

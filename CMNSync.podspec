@@ -9,9 +9,9 @@
 Pod::Spec.new do |s|
 
   s.name             = 'CMNSync'
-  s.version          = '1.0.4'
+  s.version          = '1.0.5'
   s.summary          = 'A short description of CMNSync.'
-  s.description      = 'CMN'
+  s.description      = 'CMNSync'
 
   s.homepage         = 'https://github.com/WinkyShan/CMNSync-iOS.git'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }

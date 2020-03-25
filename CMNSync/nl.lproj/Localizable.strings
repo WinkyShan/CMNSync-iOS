@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     bedrag %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES IS AL IN GEBRUIK\nDash-adressen zijn bestemd voor éénmalig gebruik\n\nhergebruik verlaagt het privacyniveau voor jou en de ontvanger en kan leiden tot verlies als de ontvanger het adres niet direct beheert";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES IS AL IN GEBRUIK\nCMN-adressen zijn bestemd voor éénmalig gebruik\n\nhergebruik verlaagt het privacyniveau voor jou en de ontvanger en kan leiden tot verlies als de ontvanger het adres niet direct beheert";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nnetwerkvergoeding +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Kon betaling niet maken";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Dash-betalingen mogen niet kleiner zijn dan %@";
+"Dash payments can't be less than %@" = "CMN-betalingen mogen niet kleiner zijn dan %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Dash-transactie is niet ondertekend";
+"Dash transaction not signed" = "CMN-transactie is niet ondertekend";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dash-transactieoutputs mogen niet minder zijn dan %@";
+"Dash transaction outputs can't be less than %@" = "CMN-transactieoutputs mogen niet minder zijn dan %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Ontoereikende fondsen";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Onvoldoende fondsen voor transactiekosten Dash-netwerk";
+"Insufficient funds for Dash network fee" = "Onvoldoende fondsen voor transactiekosten CMN-netwerk";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Interne fout";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Geen geldige privésleutel";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Niet verbonden met Dash-netwerk";
+"Not connected to the Dash network" = "Niet verbonden met CMN-netwerk";
 
 /* No comment provided by engineer. */
 "OK" = "Oké";

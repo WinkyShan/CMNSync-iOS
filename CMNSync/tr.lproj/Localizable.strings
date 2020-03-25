@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     miktar %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES ZATEN KULLANIMDA\nDash adresleri tek kullanımlıktır\n\nAdresi tekrar kullanmak hem sizin hem de alıcının gizliliğini azaltır ve eğer alıcı adresi doğrudan kontrol etmiyorsa kayba yol açabilir";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADRES ZATEN KULLANIMDA\nCMN adresleri tek kullanımlıktır\n\nAdresi tekrar kullanmak hem sizin hem de alıcının gizliliğini azaltır ve eğer alıcı adresi doğrudan kontrol etmiyorsa kayba yol açabilir";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nağ ücreti +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Ödeme yapılamadı";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Dash ödemesi %@ altında olamaz";
+"Dash payments can't be less than %@" = "CMN ödemesi %@ altında olamaz";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Dash işlemi imzalanmamış";
+"Dash transaction not signed" = "CMN işlemi imzalanmamış";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dash işlemi çıkışı %@ altında olamaz";
+"Dash transaction outputs can't be less than %@" = "CMN işlemi çıkışı %@ altında olamaz";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Yetersiz bakiye";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Dash ağ ücreti için yetersiz bakiye";
+"Insufficient funds for Dash network fee" = "CMN ağ ücreti için yetersiz bakiye";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Dahili Hata";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Geçerli bir özel anahtar değil";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Dash ağına bağlı değil";
+"Not connected to the Dash network" = "CMN ağına bağlı değil";
 
 /* No comment provided by engineer. */
 "OK" = "Tamam";

@@ -18,7 +18,8 @@
 #import "DSFetchSparkPricesOperation.h"
 
 #import "DSHTTPSparkOperation.h"
-
+//MARK - 引入头文件
+#import "DSCurrencyPriceObject.h"
 NS_ASSUME_NONNULL_BEGIN
 
 #define SPARK_TICKER_URL @"https://api.get-spark.com/list"
@@ -36,6 +37,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (DSOperation *)initOperationWithCompletion:(void (^)(NSArray<DSCurrencyPriceObject *> *_Nullable, NSString *priceSource))completion {
     self = [super initWithOperations:nil];
     if (self) {
+         //MARK - 本地货币2链接
         HTTPRequest *request = [HTTPRequest requestWithURL:[NSURL URLWithString:SPARK_TICKER_URL]
                                                     method:HTTPRequestMethod_GET
                                                 parameters:nil];
@@ -57,6 +59,10 @@ NS_ASSUME_NONNULL_BEGIN
     }
 
     NSArray<DSCurrencyPriceObject *> *prices = self.sparkOperation.prices;
+    //MARK - 打印数据
+    for (DSCurrencyPriceObject *currency in prices) {
+        NSLog(@"2---%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+    }
     self.fetchCompletion(prices, [self.class priceSourceInfo]);
 }
 

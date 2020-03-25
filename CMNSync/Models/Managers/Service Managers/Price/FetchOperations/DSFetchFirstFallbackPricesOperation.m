@@ -46,6 +46,7 @@ NS_ASSUME_NONNULL_BEGIN
     self = [super initWithOperations:nil];
     if (self) {
         {
+            ////MARK - 本地货币3链接
             HTTPRequest *request = [HTTPRequest requestWithURL:[NSURL URLWithString:DASHBTCCC_TICKER_URL]
                                                         method:HTTPRequestMethod_GET
                                                     parameters:nil];
@@ -133,7 +134,10 @@ NS_ASSUME_NONNULL_BEGIN
             }
         }
     }
-
+    //MARK - 打印数据
+    for (DSCurrencyPriceObject *currency in prices) {
+        NSLog(@"3----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+    }
     self.fetchCompletion([prices copy], [self.class priceSourceInfo]);
 }
 

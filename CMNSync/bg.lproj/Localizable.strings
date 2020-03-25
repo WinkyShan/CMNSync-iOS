@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     количество %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nВЕЧЕ ИЗПОЛЗВАН АДРЕС\nDash адресите са предназначени за еднократно използване\n\nповторното използване намалява личната неприкосновеност, вашата и на получателя и може да липсва ако получателя на контролира директно адресът ";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nВЕЧЕ ИЗПОЛЗВАН АДРЕС\nCMN адресите са предназначени за еднократно използване\n\nповторното използване намалява личната неприкосновеност, вашата и на получателя и може да липсва ако получателя на контролира директно адресът ";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nмрежова такса +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Плащането не може да се изпълни";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Dash плащанията не могат да бъдат по-малки от %@";
+"Dash payments can't be less than %@" = "CMN плащанията не могат да бъдат по-малки от %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Dash транзакцията не е подписана";
+"Dash transaction not signed" = "CMN транзакцията не е подписана";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dash изходите за транзакцията  не може да бъдат по-малко то %@";
+"Dash transaction outputs can't be less than %@" = "CMN изходите за транзакцията  не може да бъдат по-малко то %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Мрежа за разработчици";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Недостатъчно средства";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Недостатъчно средства за таксата към Dash мрежата";
+"Insufficient funds for Dash network fee" = "Недостатъчно средства за таксата към CMN мрежата";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Вътрешна грешка";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Няма валиден частен ключ";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Не е свързан към Dash мрежата";
+"Not connected to the Dash network" = "Не е свързан към CMN мрежата";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

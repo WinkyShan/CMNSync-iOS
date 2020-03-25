@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n    částka %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nPOUŽITÁ ADRESA\nDash adresy jsou určené k jednomu použití\n\nOpětovné použití snižuje vaše i soukromí příjemce a může vést ke ztrátě pokud příjemce nemá přimou kontrolu nad adresou.";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nPOUŽITÁ ADRESA\nCMN adresy jsou určené k jednomu použití\n\nOpětovné použití snižuje vaše i soukromí příjemce a může vést ke ztrátě pokud příjemce nemá přimou kontrolu nad adresou.";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\npoplatek síti +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Platbu nelze provést";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Platby dash nemohou být nižší než %@";
+"Dash payments can't be less than %@" = "Platby CMN nemohou být nižší než %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Dash transakce není podepsána";
+"Dash transaction not signed" = "CMN transakce není podepsána";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Výstupu Dash transakce nemohou být méně než %@";
+"Dash transaction outputs can't be less than %@" = "Výstupu CMN transakce nemohou být méně než %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Nedostatečný zůstatek";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Nedostatečný zůstatek pro poplatek síti Dash";
+"Insufficient funds for Dash network fee" = "Nedostatečný zůstatek pro poplatek síti CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Interní chyba";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Není platným privátním klíčem";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Nepřipojeno k sití Dash";
+"Not connected to the Dash network" = "Nepřipojeno k sití CMN";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

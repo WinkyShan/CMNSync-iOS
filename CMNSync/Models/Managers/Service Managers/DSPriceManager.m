@@ -260,6 +260,7 @@
     }
     
     dispatch_async(dispatch_get_main_queue(), ^{
+        //MARK - 余额变动通知
         [[NSNotificationCenter defaultCenter] postNotificationName:DSWalletBalanceDidChangeNotification object:nil];
     });
 }

@@ -58,7 +58,8 @@ NS_ASSUME_NONNULL_BEGIN
     NSMutableArray<DSCurrencyPriceObject *> *prices = [NSMutableArray array];
     for (NSDictionary *rawPriceObject in response) {
         NSString *symbol = rawPriceObject[@"symbol"];
-        if (![symbol hasPrefix:@"DASH"]) {
+         //MARK - 修改symbol为CMN开头
+        if (![symbol hasPrefix:@"CMN"]) {
             continue;
         }
         NSString *code = [symbol substringFromIndex:4];

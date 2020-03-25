@@ -34,6 +34,7 @@ NS_ASSUME_NONNULL_BEGIN
         });
     };
 
+    //MARK - 获取本地货币的名称和价格，提供了四个链接，若第一个不成功，则请求第二个链接，以此类推
     DSNoSucceededDependenciesCondition *condition = [DSNoSucceededDependenciesCondition new];
 
     DSOperation *operation1 = [[DSFetchDashRetailPricesOperation alloc] initOperationWithCompletion:mainThreadCompletion];

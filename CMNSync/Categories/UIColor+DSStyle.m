@@ -33,7 +33,8 @@ static inline UIColor *ColorFromHEX(NSUInteger hexValue) {
 @implementation UIColor (DSStyle)
 
 + (UIColor *)ds_dashBlueColor {
-    return ColorFromHEX(0x008DE4);
+    //MARK- 修改密码输入框输入时的背景色
+    return ColorFromHEX(0x36B9C8);
 }
 
 + (UIColor *)ds_labelColorForMode:(DSAppearanceMode)appearanceMode {    

@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     금액 %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\n이미 사용된 주소입니다\nDash 주소는 일회성으로만 사용됩니다\n\n주소 재사용은 사용자와 수신자의 개인 정보 보호에 취약하며, 수신자가 주소를 직접 제어하지 않는 경우 손실이 발생할 수 있습니다";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\n이미 사용된 주소입니다\nCMN 주소는 일회성으로만 사용됩니다\n\n주소 재사용은 사용자와 수신자의 개인 정보 보호에 취약하며, 수신자가 주소를 직접 제어하지 않는 경우 손실이 발생할 수 있습니다";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\n네트워크 수수료 +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "지불에 실패하였습니다";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "대시 지불은 %@보다 적을 수 없습니다";
+"Dash payments can't be less than %@" = "CMN 지불은 %@보다 적을 수 없습니다";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "대시 거래가 서명되지 않음";
+"Dash transaction not signed" = "CMN 거래가 서명되지 않음";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "대시 거래 금액은 %@보다 적을 수 없습니다";
+"Dash transaction outputs can't be less than %@" = "CMN 거래 금액은 %@보다 적을 수 없습니다";
 
 /* No comment provided by engineer. */
 "Devnet" = "개발자 네트워크";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "잔액 부족";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "대시 네트워크 수수료로 낼 잔액이 부족합니다";
+"Insufficient funds for Dash network fee" = "CMN 네트워크 수수료로 낼 잔액이 부족합니다";
 
 /* No comment provided by engineer. */
 "Internal Error" = "내부 오류";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "유효한 비밀 키가 아님";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "대시 네트워크에 연결되어 있지 않습니다";
+"Not connected to the Dash network" = "CMN 네트워크에 연결되어 있지 않습니다";
 
 /* No comment provided by engineer. */
 "OK" = "확인";

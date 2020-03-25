@@ -611,6 +611,7 @@
 
 - (void)postBalanceDidChangeNotification
 {
+    //MARK - 余额变动通知
     [[NSNotificationCenter defaultCenter] postNotificationName:DSWalletBalanceDidChangeNotification object:nil];
 }
 

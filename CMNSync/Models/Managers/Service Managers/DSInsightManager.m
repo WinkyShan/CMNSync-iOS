@@ -15,6 +15,7 @@
 #define ADDRESS_UTXO_PATH @"addrs/utxo"
 #define TX_PATH @"rawtx"
 
+//MARK - 链接
 #define INSIGHT_URL          @"https://insight.dash.org/insight-api-dash"
 #define INSIGHT_FAILOVER_URL @"https://insight.dash.show/api"
 

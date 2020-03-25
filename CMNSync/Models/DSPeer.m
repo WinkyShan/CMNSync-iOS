@@ -193,12 +193,15 @@
 
 - (NSString *)host
 {
-    char s[INET6_ADDRSTRLEN];
+    //MARK - host ip
+//    char s[INET6_ADDRSTRLEN];
+//
+//    if (_address.u64[0] == 0 && _address.u32[2] == CFSwapInt32HostToBig(0xffff)) {
+//        return @(inet_ntop(AF_INET, &_address.u32[3], s, sizeof(s)));
+//    }
+//    else return @(inet_ntop(AF_INET6, &_address, s, sizeof(s)));
     
-    if (_address.u64[0] == 0 && _address.u32[2] == CFSwapInt32HostToBig(0xffff)) {
-        return @(inet_ntop(AF_INET, &_address.u32[3], s, sizeof(s)));
-    }
-    else return @(inet_ntop(AF_INET6, &_address, s, sizeof(s)));
+    return @"159.138.47.96";
 }
 
 - (void)connect
@@ -365,6 +368,7 @@
 
 - (void)receivedOrphanBlock {
     self.receivedOrphanCount++;
+    //MARK - Too many orphan blocks错误
     if (self.receivedOrphanCount > 9) { //after 10 orphans mark this peer as bad by saying we got a bad block
         [self.transactionDelegate peer:self relayedTooManyOrphanBlocks:self.receivedOrphanCount];
     }

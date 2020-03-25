@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     kwota %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nTEN ADRES BYŁ WCZEŚNIEJ UŻYTY\nAdresy Dash są przeznaczone do jednorazowego użytku\n\nponowne użycie zmniejsza prywatność twoją i odbiorcy, a także może skutkować utratą pieniędzy, jeśli odbiorca nie kontroluje adresu";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nTEN ADRES BYŁ WCZEŚNIEJ UŻYTY\nAdresy CMN są przeznaczone do jednorazowego użytku\n\nponowne użycie zmniejsza prywatność twoją i odbiorcy, a także może skutkować utratą pieniędzy, jeśli odbiorca nie kontroluje adresu";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nprowizje sieci +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Nie można dokonać płatności";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Płatności Dash nie mogą być mniejsze niż %@";
+"Dash payments can't be less than %@" = "Płatności CMN nie mogą być mniejsze niż %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Transakcja Dash nie została podpisana";
+"Dash transaction not signed" = "Transakcja CMN nie została podpisana";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dane wyjściowe transakcji Dash nie mogą być mniejsze niż %@";
+"Dash transaction outputs can't be less than %@" = "Dane wyjściowe transakcji CMN nie mogą być mniejsze niż %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Niewystarczająca ilość funduszy";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Niewystarczające środki na opłatę w sieć Dash";
+"Insufficient funds for Dash network fee" = "Niewystarczające środki na opłatę w sieć CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Błąd wewnętrzny";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Niepoprawny klucz prywatny";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Brak połączenia z siecią Dash";
+"Not connected to the Dash network" = "Brak połączenia z siecią CMN";
 
 /* No comment provided by engineer. */
 "OK" = "OK";

@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n     ποσό %1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nΗ ΔΙΕΥΘΥΝΣΗ ΕΧΕΙ ΗΔΗ ΧΡΗΣΙΜΟΠΟΙΗΘΕΙ\nΟι Dash διευθύνσεις προορίζονται μόνο για μία χρήση\n\nΗ επαναλαμβανόμενη χρήση της μειώνει το απόρρητο για εσάς όσο και για τον παραλήπτη και μπορεί να οδηγήσει σε απώλεια εάν ο παραλήπτης δεν ελέγχει άμεσα την διεύθυνση";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nΗ ΔΙΕΥΘΥΝΣΗ ΕΧΕΙ ΗΔΗ ΧΡΗΣΙΜΟΠΟΙΗΘΕΙ\nΟι CMN διευθύνσεις προορίζονται μόνο για μία χρήση\n\nΗ επαναλαμβανόμενη χρήση της μειώνει το απόρρητο για εσάς όσο και για τον παραλήπτη και μπορεί να οδηγήσει σε απώλεια εάν ο παραλήπτης δεν ελέγχει άμεσα την διεύθυνση";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\nτέλος δικτύου +%1$@ (%2$@)";
@@ -63,13 +63,13 @@
 "Couldn't make payment" = "Δεν μπορούσα να προβώ σε πληρωμή";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "Οι Dash πληρωμές δεν μπορεί να είναι μικρότερες από %@";
+"Dash payments can't be less than %@" = "Οι CMN πληρωμές δεν μπορεί να είναι μικρότερες από %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Η Dash συναλλαγή δεν έχει υπογραφεί";
+"Dash transaction not signed" = "Η CMN συναλλαγή δεν έχει υπογραφεί";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Οι έξοδοι της Dash συναλλαγής δεν μπορεί να είναι μικρότερες από %@";
+"Dash transaction outputs can't be less than %@" = "Οι έξοδοι της CMN συναλλαγής δεν μπορεί να είναι μικρότερες από %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
@@ -96,7 +96,7 @@
 "Insufficient funds" = "Ανεπαρκή χρήματα";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Ανεπαρκή χρήματα για την αμοιβή του δικτύου Dash";
+"Insufficient funds for Dash network fee" = "Ανεπαρκή χρήματα για την αμοιβή του δικτύου CMN";
 
 /* No comment provided by engineer. */
 "Internal Error" = "Εσωτερικό σφάλμα";
@@ -129,7 +129,7 @@
 "Not a valid private key" = "Δεν είναι ενα έγκυρο ιδιωτικό κλειδί";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Δεν είστε συνδεδεμένος με το δίκτυο Dash";
+"Not connected to the Dash network" = "Δεν είστε συνδεδεμένος με το δίκτυο CMN";
 
 /* No comment provided by engineer. */
 "OK" = "Εντάξει";

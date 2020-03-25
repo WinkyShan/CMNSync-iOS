@@ -63,9 +63,12 @@
 #define DSDLog(...)
 #endif
 
+//#define TESTNET_DNS_SEEDS @[@"testnet.codemason.xyz"]
 #define TESTNET_DNS_SEEDS @[@"testnet-seed.dashdot.io"]
 
-#define MAINNET_DNS_SEEDS @[@"dnsseed.dash.org",@"dnsseed.dashdot.io"]
+//MARK - 修改域名
+#define MAINNET_DNS_SEEDS @[@"testnet.codemason.xyz"]//159.138.47.96
+//#define MAINNET_DNS_SEEDS @[@"dnsseed.dash.org",@"dnsseed.dashdot.io"]
 
 #define TESTNET_MAIN_PEER @""//@"52.36.64.148:19999"
 
@@ -269,7 +272,7 @@
                     
                     DSDLog(@"DNS lookup %@", [dnsSeeds objectAtIndex:i]);
                     NSString * dnsSeed = [dnsSeeds objectAtIndex:i];
-                    
+                    //MARK - 获取address，得到host和port
                     if (getaddrinfo([dnsSeed UTF8String], servname.UTF8String, &hints, &servinfo) == 0) {
                         for (p = servinfo; p != NULL; p = p->ai_next) {
                             if (p->ai_family == AF_INET) {
@@ -719,6 +722,7 @@
     
     // drop peers that don't carry full blocks, or aren't synced yet
     // TODO: XXXX does this work with 0.11 pruned nodes?
+    //MARK - 此判断会导致服务器无法连接
     if (! (peer.services & SERVICES_NODE_NETWORK) || peer.lastblock + 10 < self.chain.lastBlockHeight) {
         [peer disconnect];
         return;

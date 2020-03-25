@@ -9,7 +9,7 @@
 "\n\n     amount %@ (%@)" = "\n\n      金额%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\nCMN addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\n网络手续费+%1$@ (%2$@)";
@@ -36,7 +36,7 @@
 "Are you sure you would like to update this masternode to pay to %@?" = "Are you sure you would like to update this masternode to pay to %@?";
 
 /* No comment provided by engineer. */
-"Bad password, try again" = "Bad password, try again";
+"Bad password, try again" = "密码错误, 请重试";
 
 /* No comment provided by engineer. */
 "Bad payment request" = "Bad payment request";
@@ -48,16 +48,16 @@
 "Bad payment URL" = "Bad payment URL";
 
 /* No comment provided by engineer. */
-"Cancel" = "Cancel";
+"Cancel" = "取消";
 
 /* No comment provided by engineer. */
-"Confirm" = "Confirm";
+"Confirm" = "确认";
 
 /* No comment provided by engineer. */
-"Confirm PIN" = "Confirm PIN";
+"Confirm PIN" = "确认 PIN";
 
 /* No comment provided by engineer. */
-"Connect timeout" = "Connect timeout";
+"Connect timeout" = "连接超时";
 
 /* No comment provided by engineer. */
 "Couldn't make payment" = "Couldn't make payment";
@@ -66,22 +66,22 @@
 "Dash payments can't be less than %@" = "CMN payments can't be less than %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "Dash transaction not signed";
+"Dash transaction not signed" = "CMN transaction not signed";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "Dash transaction outputs can't be less than %@";
+"Dash transaction outputs can't be less than %@" = "CMN transaction outputs can't be less than %@";
 
 /* No comment provided by engineer. */
 "Devnet" = "Devnet";
 
 /* No comment provided by engineer. */
-"Double spend" = "Double spend";
+"Double spend" = "双重花费";
 
 /* The server is not working */
 "Down" = "Down";
 
 /* No comment provided by engineer. */
-"Enter old PIN" = "Enter old PIN";
+"Enter old PIN" = "输入旧PIN";
 
 /* No comment provided by engineer. */
 "Error from payment request server %@" = "Error from payment request server %@";
@@ -90,16 +90,16 @@
 "Error signing transaction" = "Error signing transaction";
 
 /* No comment provided by engineer. */
-"Ignore" = "Ignore";
+"Ignore" = "忽略";
 
 /* No comment provided by engineer. */
-"Insufficient funds" = "Insufficient funds";
+"Insufficient funds" = "资金不足";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Insufficient funds for Dash network fee";
+"Insufficient funds for Dash network fee" = "Insufficient funds for CMN network fee";
 
 /* No comment provided by engineer. */
-"Internal Error" = "Internal Error";
+"Internal Error" = "网络错误";
 
 /* No comment provided by engineer. */
 "Invalid DAPI Response" = "Invalid DAPI Response";
@@ -126,10 +126,10 @@
 "No peers found" = "No peers found";
 
 /* No comment provided by engineer. */
-"Not a valid private key" = "Not a valid private key";
+"Not a valid private key" = "无效的私钥";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Not connected to the Dash network";
+"Not connected to the Dash network" = "Not connected to the CMN network";
 
 /* No comment provided by engineer. */
 "OK" = "OK";
@@ -141,7 +141,7 @@
 "Passcode" = "Passcode";
 
 /* No comment provided by engineer. */
-"Password" = "Password";
+"Password" = "密码";
 
 /* No comment provided by engineer. */
 "Password protected key" = "Password protected key";
@@ -156,7 +156,7 @@
 "Please authenticate to create your %@ wallet" = "Please authenticate to create your %@ wallet";
 
 /* No comment provided by engineer. */
-"Recovery phrase" = "Recovery phrase";
+"Recovery phrase" = "恢复密语";
 
 /* No comment provided by engineer. */
 "Reduce payment amount by\n%@ (%@)?" = "Reduce payment amount by\n%1$@ (%2$@)?";
@@ -168,31 +168,31 @@
 "Requested network \"%@\" not currently in use" = "Requested network \"%@\" not currently in use";
 
 /* No comment provided by engineer. */
-"Rescan" = "Rescan";
+"Rescan" = "重新扫描";
 
 /* No comment provided by engineer. */
-"Reset" = "Reset";
+"Reset" = "重置";
 
 /* No comment provided by engineer. */
 "Server Error" = "Server Error";
 
 /* No comment provided by engineer. */
-"Set PIN" = "Set PIN";
+"Set PIN" = "设置PIN";
 
 /* No comment provided by engineer. */
 "Testnet" = "Testnet";
 
 /* No comment provided by engineer. */
-"This payment address is already in your wallet" = "This payment address is already in your wallet";
+"This payment address is already in your wallet" = "该付款地址已经在您的钱包中";
 
 /* No comment provided by engineer. */
-"This private key is already in your wallet" = "This private key is already in your wallet";
+"This private key is already in your wallet" = "该私钥已经在您的钱包中";
 
 /* No comment provided by engineer. */
-"This private key is empty" = "This private key is empty";
+"This private key is empty" = "私钥为空";
 
 /* No comment provided by engineer. */
-"Transaction canceled, network timeout" = "Transaction canceled, network timeout";
+"Transaction canceled, network timeout" = "交易取消，网络超时";
 
 /* No comment provided by engineer. */
 "Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)";
@@ -207,10 +207,10 @@
 "Unexpected response from %@" = "Unexpected response from %@";
 
 /* No comment provided by engineer. */
-"Unknown address" = "Unknown address";
+"Unknown address" = "未知的地址";
 
 /* No comment provided by engineer. */
-"Unknown Error" = "Unknown Error";
+"Unknown Error" = "未知错误";
 
 /* No comment provided by engineer. */
 "Unknown JSON-RPC Response" = "Unknown JSON-RPC Response";
@@ -231,13 +231,13 @@
 "Updating Price" = "更新价格";
 
 /* No comment provided by engineer. */
-"Wallet disabled" = "Wallet disabled";
+"Wallet disabled" = "钱包被禁用";
 
 /* No comment provided by engineer. */
-"WARNING" = "WARNING";
+"WARNING" = "警告";
 
 /* No comment provided by engineer. */
-"Wipe" = "Wipe";
+"Wipe" = "清空";
 
 /* No comment provided by engineer. */
 "Your wallet may be out of sync.\nThis can often be fixed by rescanning the blockchain." = "你的钱包可能未同步。\n这通常可以通过重新扫描区块链来修复。";
