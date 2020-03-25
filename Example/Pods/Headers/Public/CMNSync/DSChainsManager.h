@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/Managers/Chain Managers/DSChainsManager.h

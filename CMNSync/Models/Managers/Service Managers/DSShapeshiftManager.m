@@ -182,7 +182,8 @@
         if (((((NSHTTPURLResponse*)response).statusCode /100) != 2) || connectionError) {
             NSError * returnError = connectionError;
             if (!returnError) {
-                returnError = [NSError errorWithDomain:@"DashSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
+                //MARK - DashSync->CMNSync
+                returnError = [NSError errorWithDomain:@"CMNSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
             }
             dispatch_async(dispatch_get_main_queue(), ^{
                 completionBlock(nil,returnError);
@@ -261,7 +262,8 @@
                                if (((((NSHTTPURLResponse*)response).statusCode /100) != 2) || connectionError) {
                                    NSError * returnError = connectionError;
                                    if (!returnError) {
-                                       returnError = [NSError errorWithDomain:@"DashSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
+                                       //MARK - DashSync->CMNSync
+                                       returnError = [NSError errorWithDomain:@"CMNSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
                                    }
                                    dispatch_async(dispatch_get_main_queue(), ^{
                                        completionBlock(nil,returnError);
@@ -325,7 +327,8 @@
                                if (((((NSHTTPURLResponse*)response).statusCode /100) != 2) || connectionError) {
                                    NSError * returnError = connectionError;
                                    if (!returnError) {
-                                       returnError = [NSError errorWithDomain:@"DashSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
+                                       //MARK - DashSync->CMNSync
+                                       returnError = [NSError errorWithDomain:@"CMNSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
                                    }
                                    dispatch_async(dispatch_get_main_queue(), ^{
                                        completionBlock(nil,returnError);
@@ -342,7 +345,8 @@
                                }
                                dispatch_async(dispatch_get_main_queue(), ^{
                                    if ([dictionary objectForKey:@"error"]) {
-                                       completionBlock(nil,[NSError errorWithDomain:@"DashSync" code:500 userInfo:@{NSLocalizedDescriptionKey:[dictionary objectForKey:@"error"]
+                                       //MARK - DashSync->CMNSync
+                                       completionBlock(nil,[NSError errorWithDomain:@"CMNSync" code:500 userInfo:@{NSLocalizedDescriptionKey:[dictionary objectForKey:@"error"]
                                                                                                                       }]);
                                    } else {
                                        completionBlock(dictionary,nil);
@@ -529,7 +533,8 @@
                                if (((((NSHTTPURLResponse*)response).statusCode /100) != 2) || connectionError) {
                                    NSError * returnError = connectionError;
                                    if (!returnError) {
-                                       returnError = [NSError errorWithDomain:@"DashSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
+                                       //MARK - DashSync->CMNSync
+                                       returnError = [NSError errorWithDomain:@"CMNSync" code:((NSHTTPURLResponse*)response).statusCode userInfo:nil];
                                    }
                                    dispatch_async(dispatch_get_main_queue(), ^{
                                        completionBlock(nil,returnError);
@@ -546,7 +551,8 @@
                                }
                                dispatch_async(dispatch_get_main_queue(), ^{
                                    if ([dictionary objectForKey:@"error"]) {
-                                       completionBlock(nil,[NSError errorWithDomain:@"DashSync" code:500 userInfo:@{NSLocalizedDescriptionKey:[dictionary objectForKey:@"error"]
+                                       //MARK - DashSync->CMNSync
+                                       completionBlock(nil,[NSError errorWithDomain:@"CMNSync" code:500 userInfo:@{NSLocalizedDescriptionKey:[dictionary objectForKey:@"error"]
                                                                                                                       }]);
                                    } else {
                                        completionBlock(dictionary,nil);

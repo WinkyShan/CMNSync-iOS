@@ -322,8 +322,8 @@
                                                          services:SERVICES_NODE_NETWORK | SERVICES_NODE_BLOOM]];
             } else {
                 UInt128 addr = { .u32 = { 0, 0, CFSwapInt32HostToBig(0xffff), 0 } };
-                
-                NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"DashSync" ofType:@"bundle"];
+                //MARK - DashSync->CMNSync
+                NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"CMNSync" ofType:@"bundle"];
                 NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
                 NSString * path = [bundle pathForResource:[self.chain isMainnet]?FIXED_PEERS:TESTNET_FIXED_PEERS ofType:@"plist"];
                 for (NSNumber *address in [NSArray arrayWithContentsOfFile:path]) {
@@ -366,8 +366,8 @@
             [DSPeerEntity deleteAllObjects];
             _peers = nil;
         }
-        
-        [peer disconnectWithError:[NSError errorWithDomain:@"DashSync" code:500
+        //MARK - DashSync->CMNSync
+        [peer disconnectWithError:[NSError errorWithDomain:@"CMNSync" code:500
                                                   userInfo:@{NSLocalizedDescriptionKey:errorMessage}]];
         [self connect];
     }
@@ -649,9 +649,9 @@
         
         if (self.connectedPeers.count == 0) {
             [self syncStopped];
-            
+            //MARK - DashSync->CMNSync
             dispatch_async(dispatch_get_main_queue(), ^{
-                NSError *error = [NSError errorWithDomain:@"DashSync" code:1
+                NSError *error = [NSError errorWithDomain:@"CMNSync" code:1
                                                  userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"No peers found", nil)}];
                 
                 [[NSNotificationCenter defaultCenter] postNotificationName:DSTransactionManagerSyncFailedNotification
@@ -834,8 +834,8 @@
 - (void)peer:(DSPeer *)peer disconnectedWithError:(NSError *)error
 {
     DSDLog(@"%@:%d disconnected%@%@", peer.host, peer.port, (error ? @", " : @""), (error ? error : @""));
-    
-    if ([error.domain isEqual:@"DashSync"] && error.code != DASH_PEER_TIMEOUT_CODE) {
+    //MARK - DashSync->CMNSync
+    if ([error.domain isEqual:@"CMNSync"] && error.code != DASH_PEER_TIMEOUT_CODE) {
         [self peerMisbehaving:peer errorMessage:error.localizedDescription]; // if it's protocol error other than timeout, the peer isn't following the rules
     }
     else if (error) { // timeout or some non-protocol related network error

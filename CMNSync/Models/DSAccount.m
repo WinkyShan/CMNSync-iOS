@@ -1566,12 +1566,14 @@ static NSUInteger transactionAddressIndex(DSTransaction *transaction, NSArray *a
     DSECDSAKey *key = [DSECDSAKey keyWithPrivateKey:privKey onChain:self.wallet.chain];
     NSString * address = [key addressForChain:self.wallet.chain];
     if (! address) {
-        completion(nil, 0, [NSError errorWithDomain:@"DashSync" code:187 userInfo:@{NSLocalizedDescriptionKey:
+        //MARK - DashSync->CMNSync
+        completion(nil, 0, [NSError errorWithDomain:@"CMNSync" code:187 userInfo:@{NSLocalizedDescriptionKey:
                                                                                         DSLocalizedString(@"Not a valid private key", nil)}]);
         return;
     }
     if ([self.wallet containsAddress:address]) {
-        completion(nil, 0, [NSError errorWithDomain:@"DashSync" code:187 userInfo:@{NSLocalizedDescriptionKey:
+        //MARK - DashSync->CMNSync
+        completion(nil, 0, [NSError errorWithDomain:@"CMNSync" code:187 userInfo:@{NSLocalizedDescriptionKey:
                                                                                         DSLocalizedString(@"This private key is already in your wallet", nil)}]);
         return;
     }
@@ -1597,7 +1599,8 @@ static NSUInteger transactionAddressIndex(DSTransaction *transaction, NSArray *a
         }
         
         if (balance == 0) {
-            completion(nil, 0, [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion(nil, 0, [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                             DSLocalizedString(@"This private key is empty", nil)}]);
             return;
         }
@@ -1606,7 +1609,8 @@ static NSUInteger transactionAddressIndex(DSTransaction *transaction, NSArray *a
         if (fee) feeAmount = [self.wallet.chain feeForTxSize:tx.size + 34 + (key.publicKeyData.length - 33)*tx.inputHashes.count]; //input count doesn't matter for non instant transactions
         
         if (feeAmount + self.wallet.chain.minOutputAmount > balance) {
-            completion(nil, 0, [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion(nil, 0, [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                             DSLocalizedString(@"Transaction fees would cost more than the funds available on this "
                                                                                                               "private key (due to tiny \"dust\" deposits)",nil)}]);
             return;
@@ -1615,7 +1619,8 @@ static NSUInteger transactionAddressIndex(DSTransaction *transaction, NSArray *a
         [tx addOutputAddress:self.receiveAddress amount:balance - feeAmount];
         
         if (! [tx signWithSerializedPrivateKeys:@[privKey]]) {
-            completion(nil, 0, [NSError errorWithDomain:@"DashSync" code:401 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion(nil, 0, [NSError errorWithDomain:@"CMNSync" code:401 userInfo:@{NSLocalizedDescriptionKey:
                                                                                             DSLocalizedString(@"Error signing transaction", nil)}]);
             return;
         }

@@ -265,7 +265,8 @@ static NSUInteger _fetchBatchSize = 100;
     
     dispatch_once(&onceToken, ^{
         NSURL *docURL = [[NSFileManager defaultManager] URLsForDirectory:NSDocumentDirectory inDomains:NSUserDomainMask].lastObject;
-        NSString *fileName = @"DashSync.sqlite";
+        //MARK - DashSync->CMNSync
+        NSString *fileName = @"CMNSync.sqlite";
         storeURL = [docURL URLByAppendingPathComponent:fileName];
     });
     return storeURL;
@@ -276,7 +277,8 @@ static NSUInteger _fetchBatchSize = 100;
     
     dispatch_once(&onceToken, ^{
         NSBundle *frameworkBundle = [NSBundle bundleForClass:[DSTransaction class]];
-        NSURL *bundleURL = [[frameworkBundle resourceURL] URLByAppendingPathComponent:@"DashSync.bundle"];
+        //MARK - DashSync->CMNSync
+        NSURL *bundleURL = [[frameworkBundle resourceURL] URLByAppendingPathComponent:@"CMNSync.bundle"];
         NSBundle *resourceBundle = [NSBundle bundleWithURL:bundleURL];
         NSURL *modelURL = [resourceBundle URLsForResourcesWithExtension:@"momd" subdirectory:nil].lastObject;
         

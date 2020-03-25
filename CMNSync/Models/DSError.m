@@ -16,5 +16,5 @@
 //
 
 #import "DSError.h"
-
-NSErrorDomain const DSErrorDomain = @"DashSync";
+//MARK - DashSync->CMNSync
+NSErrorDomain const DSErrorDomain = @"CMNSync";

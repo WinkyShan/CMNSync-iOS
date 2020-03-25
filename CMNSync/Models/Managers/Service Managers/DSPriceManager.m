@@ -176,8 +176,9 @@
     self.localFormat.numberStyle = NSNumberFormatterCurrencyStyle;
     self.localFormat.generatesDecimalNumbers = YES;
     self.localFormat.negativeFormat = self.dashFormat.negativeFormat;
-    
-    NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"DashSync" ofType:@"bundle"];
+   
+    //MARK - DashSync->CMNSync
+    NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"CMNSync" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSString *path = [bundle pathForResource:@"CurrenciesByCode" ofType:@"plist"];
     _currenciesByCode = [NSDictionary dictionaryWithContentsOfFile:path];

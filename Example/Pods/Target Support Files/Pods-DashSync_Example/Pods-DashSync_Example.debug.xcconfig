@@ -1,0 +1,9 @@
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+HEADER_SEARCH_PATHS = $(inherited) "${PODS_ROOT}/Headers/Public" "${PODS_ROOT}/Headers/Public/CMNSync" "${PODS_ROOT}/Headers/Public/CocoaLumberjack" "${PODS_ROOT}/Headers/Public/DSDynamicOptions" "${PODS_ROOT}/Headers/Public/DWAlertController" "${PODS_ROOT}/Headers/Public/KVO-MVVM" "${PODS_ROOT}/Headers/Public/TinyCborObjc" "${PODS_ROOT}/Headers/Public/bls-signatures-pod" "${PODS_ROOT}/Headers/Public/ios-dpp" "${PODS_ROOT}/Headers/Public/secp256k1_dash" "${PODS_ROOT}/Headers/Public/tinycbor"
+LIBRARY_SEARCH_PATHS = $(inherited) "${PODS_CONFIGURATION_BUILD_DIR}/CMNSync" "${PODS_CONFIGURATION_BUILD_DIR}/CocoaLumberjack" "${PODS_CONFIGURATION_BUILD_DIR}/DSDynamicOptions" "${PODS_CONFIGURATION_BUILD_DIR}/DWAlertController" "${PODS_CONFIGURATION_BUILD_DIR}/KVO-MVVM" "${PODS_CONFIGURATION_BUILD_DIR}/TinyCborObjc" "${PODS_CONFIGURATION_BUILD_DIR}/ios-dpp" "${PODS_CONFIGURATION_BUILD_DIR}/secp256k1_dash" "${PODS_CONFIGURATION_BUILD_DIR}/tinycbor" "${PODS_ROOT}/bls-signatures-pod/artefacts"
+OTHER_LDFLAGS = $(inherited) -ObjC -l"CMNSync" -l"CocoaLumberjack" -l"DSDynamicOptions" -l"DWAlertController" -l"KVO-MVVM" -l"TinyCborObjc" -l"bls_ios" -l"bz2" -l"c++" -l"gmp_ios" -l"ios-dpp" -l"relic_ios" -l"secp256k1_dash" -l"sqlite3" -l"tinycbor" -framework "BackgroundTasks" -framework "CoreData" -framework "Foundation" -framework "SystemConfiguration" -framework "UIKit"
+PODS_BUILD_DIR = ${BUILD_DIR}
+PODS_CONFIGURATION_BUILD_DIR = ${PODS_BUILD_DIR}/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods
+USE_RECURSIVE_SCRIPT_INPUTS_IN_SCRIPT_PHASES = YES

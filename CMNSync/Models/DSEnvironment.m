@@ -53,7 +53,8 @@
     
     dispatch_once(&onceToken, ^{
         NSBundle *frameworkBundle = [NSBundle bundleForClass:[DSTransaction class]];
-        NSURL *bundleURL = [[frameworkBundle resourceURL] URLByAppendingPathComponent:@"DashSync.bundle"];
+        //MARK - DashSync->CMNSync
+        NSURL *bundleURL = [[frameworkBundle resourceURL] URLByAppendingPathComponent:@"CMNSync.bundle"];
         resourceBundle = [NSBundle bundleWithURL:bundleURL];
     });
     return resourceBundle;

@@ -1,0 +1,1 @@
+../../../../../CMNSync/Models/DSSimplifiedMasternodeEntry.h

@@ -138,7 +138,8 @@
     if ([transaction transactionTypeRequiresInputs] && !transaction.isSigned) {
         if (completion) {
             [[DSEventManager sharedEventManager] saveEvent:@"transaction_manager:not_signed"];
-            completion([NSError errorWithDomain:@"DashSync" code:401 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion([NSError errorWithDomain:@"CMNSync" code:401 userInfo:@{NSLocalizedDescriptionKey:
                                                                                     DSLocalizedString(@"Dash transaction not signed", nil)}]);
         }
         
@@ -147,7 +148,8 @@
     else if (! self.peerManager.connected && self.peerManager.connectFailures >= MAX_CONNECT_FAILURES) {
         if (completion) {
             [[DSEventManager sharedEventManager] saveEvent:@"transaction_manager:not_connected"];
-            completion([NSError errorWithDomain:@"DashSync" code:-1009 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion([NSError errorWithDomain:@"CMNSync" code:-1009 userInfo:@{NSLocalizedDescriptionKey:
                                                                                       DSLocalizedString(@"Not connected to the Dash network", nil)}]);
         }
         
@@ -343,7 +345,8 @@
     
     if (callback) {
         [[DSEventManager sharedEventManager] saveEvent:@"transaction_manager:tx_canceled_timeout"];
-        callback([NSError errorWithDomain:@"DashSync" code:DASH_PEER_TIMEOUT_CODE userInfo:@{NSLocalizedDescriptionKey:
+        //MARK - DashSync->CMNSync
+        callback([NSError errorWithDomain:@"CMNSync" code:DASH_PEER_TIMEOUT_CODE userInfo:@{NSLocalizedDescriptionKey:
                                                                                                  DSLocalizedString(@"Transaction canceled, network timeout", nil)}]);
     }
 }
@@ -545,7 +548,8 @@ requiresSpendingAuthenticationPrompt:(BOOL)requiresSpendingAuthenticationPrompt
             
             if (!signedTransaction || ! tx.isSigned) {
                 if (! previouslyWasAuthenticated && !keepAuthenticatedIfErrorAfterAuthentication) [authenticationManager deauthenticate];
-                signedCompletion(tx,[NSError errorWithDomain:@"DashSync" code:401
+                //MARK - DashSync->CMNSync
+                signedCompletion(tx,[NSError errorWithDomain:@"CMNSync" code:401
                                                     userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Error signing transaction", nil)}],NO);
                 return;
             }
@@ -866,7 +870,8 @@ requiresSpendingAuthenticationPrompt:(BOOL)requiresSpendingAuthenticationPrompt
     
     if (callback && ![account transactionIsValid:transaction]) {
         [self.publishedTx removeObjectForKey:hash];
-        error = [NSError errorWithDomain:@"DashSync" code:401
+        //MARK - DashSync->CMNSync
+        error = [NSError errorWithDomain:@"CMNSync" code:401
                                 userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Double spend", nil)}];
     }
     else if (transaction && ![account transactionForHash:txHash] && [account registerTransaction:transaction]) {

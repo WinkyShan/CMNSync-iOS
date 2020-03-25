@@ -95,8 +95,9 @@
                                          
                                          if (error) {
                                              DSDLog(@"Error decoding response %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                                             //MARK - DashSync->CMNSync
                                              completion(nil,
-                                                        [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                                                        [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                                      [NSString stringWithFormat:DSLocalizedString(@"Unexpected response from %@", nil),
                                                                                                                       req.URL.host]}]);
                                              return;
@@ -140,8 +141,9 @@
                                          
                                          if (error || ! [json isKindOfClass:[NSArray class]]) {
                                              DSDLog(@"Error decoding response %@",[[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
+                                             //MARK - DashSync->CMNSync
                                              completion(nil, nil, nil,
-                                                        [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                                                        [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                                        [NSString stringWithFormat:DSLocalizedString(@"Unexpected response from %@", nil),
                                                                                                                         req.URL.host]}]);
                                              return;
@@ -166,8 +168,10 @@
                                                  ! [utxo[@"scriptPubKey"] isKindOfClass:[NSString class]] ||
                                                  ! [utxo[@"scriptPubKey"] hexToData] ||
                                                  (! [utxo[@"duffs"] isKindOfClass:[NSNumber class]] && ! [utxo[@"satoshis"] isKindOfClass:[NSNumber class]] && !amount)) {
+                                                 //MARK - DashSync->CMNSync
                                                  completion(nil, nil, nil,
-                                                            [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                                                            
+                                                            [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                                                                                                            [NSString stringWithFormat:DSLocalizedString(@"Unexpected response from %@", nil),
                                                                                                                             req.URL.host]}]);
                                                  return;

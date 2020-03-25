@@ -111,7 +111,8 @@
 - (NSArray *)words
 {
     if (! _words) {
-        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"DashSync" ofType:@"bundle"];
+        //MARK - DashSync->CMNSync
+        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"CMNSync" ofType:@"bundle"];
         NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
         if (self.defaultLanguage == DSBIP39Language_Default) {
             _words = [NSArray arrayWithContentsOfFile:[bundle pathForResource:WORDS ofType:@"plist"]];
@@ -126,8 +127,8 @@
 {
     if (! _allWords) {
         NSMutableSet *allWords = [NSMutableSet set];
-        
-        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"DashSync" ofType:@"bundle"];
+        //MARK - DashSync->CMNSync
+        NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"CMNSync" ofType:@"bundle"];
         NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
         for (NSString *lang in bundle.localizations) {
             [allWords addObjectsFromArray:[NSArray arrayWithContentsOfFile:[bundle

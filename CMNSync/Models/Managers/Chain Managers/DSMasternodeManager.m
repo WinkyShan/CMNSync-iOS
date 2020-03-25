@@ -480,7 +480,8 @@
 -(void)getMasternodeListForBlockHeight:(uint32_t)blockHeight error:(NSError**)error {
     DSMerkleBlock * merkleBlock = [self.chain blockAtHeight:blockHeight];
     if (!merkleBlock) {
-        *error = [NSError errorWithDomain:@"DashSync" code:600 userInfo:@{NSLocalizedDescriptionKey:@"Unknown block"}];
+        //MARK - DashSync->CMNSync
+        *error = [NSError errorWithDomain:@"CMNSync" code:600 userInfo:@{NSLocalizedDescriptionKey:@"Unknown block"}];
         return;
     }
     [self getMasternodeListForBlockHash:merkleBlock.blockHash];
@@ -504,7 +505,8 @@
         completion(NO);
         return;
     }
-    NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"DashSync" ofType:@"bundle"];
+    //MARK - DashSync->CMNSync
+    NSString *bundlePath = [[NSBundle bundleForClass:self.class] pathForResource:@"CMNSync" ofType:@"bundle"];
     NSBundle *bundle = [NSBundle bundleWithPath:bundlePath];
     NSString *filePath = [bundle pathForResource:checkpoint.masternodeListName ofType:@"dat"];
     if (!filePath) {

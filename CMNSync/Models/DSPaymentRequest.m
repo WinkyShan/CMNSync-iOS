@@ -321,7 +321,8 @@ completion:(void (^)(DSPaymentProtocolRequest *req, NSError *error))completion
 //  [req addValue:@"text/uri-list" forHTTPHeaderField:@"Accept"]; // breaks some BIP72 implementations, notably bitpay's
 
     if (! req) {
-        completion(nil, [NSError errorWithDomain:@"DashSync" code:417
+        //MARK - DashSync->CMNSync
+        completion(nil, [NSError errorWithDomain:@"CMNSync" code:417
                          userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Bad payment request URL", nil)}]);
         return;
     }
@@ -350,12 +351,14 @@ completion:(void (^)(DSPaymentProtocolRequest *req, NSError *error))completion
         if (! request) {
             DSDLog(@"unexpected response from %@:\n%@", req.URL.host,
                   [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
-            completion(nil, [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion(nil, [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                              [NSString stringWithFormat:DSLocalizedString(@"Unexpected response from %@", nil),
                               req.URL.host]}]);
         }
         else if (![request.details.chain isEqual:chain]) {
-            completion(nil, [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+            //MARK - DashSync->CMNSync
+            completion(nil, [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                              [NSString stringWithFormat:DSLocalizedString(@"Requested network \"%@\" not currently in use",
                                                                           nil), request.details.chain.networkName]}]);
         }
@@ -372,7 +375,8 @@ completion:(void (^)(DSPaymentProtocolRequest *req, NSError *error))completion
     
     if (! req) {
         if (completion) {
-            completion(nil, [NSError errorWithDomain:@"DashSync" code:417
+            //MARK - DashSync->CMNSync
+            completion(nil, [NSError errorWithDomain:@"CMNSync" code:417
                              userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Bad payment URL", nil)}]);
         }
         
@@ -401,7 +405,8 @@ completion:(void (^)(DSPaymentProtocolRequest *req, NSError *error))completion
             DSDLog(@"unexpected response from %@:\n%@", req.URL.host,
                   [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding]);
             if (completion) {
-                completion(nil, [NSError errorWithDomain:@"DashSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
+                //MARK - DashSync->CMNSync
+                completion(nil, [NSError errorWithDomain:@"CMNSync" code:417 userInfo:@{NSLocalizedDescriptionKey:
                                  [NSString stringWithFormat:DSLocalizedString(@"Unexpected response from %@", nil),
                                   req.URL.host]}]);
             }

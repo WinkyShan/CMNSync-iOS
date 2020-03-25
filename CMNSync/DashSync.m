@@ -159,6 +159,7 @@ static NSString * const BG_TASK_REFRESH_IDENTIFIER = @"org.dashcore.dashsync.bac
         [chain reloadDerivationPaths];
         
         dispatch_async(dispatch_get_main_queue(), ^{
+            //MARK - 余额变动通知
             [[NSNotificationCenter defaultCenter] postNotificationName:DSWalletBalanceDidChangeNotification object:nil];
             [[NSNotificationCenter defaultCenter] postNotificationName:DSChainBlocksDidChangeNotification object:nil];
         });

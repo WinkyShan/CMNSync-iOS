@@ -281,8 +281,9 @@
         [self.outputStream scheduleInRunLoop:self.runLoop forMode:NSRunLoopCommonModes];
         
         // after the reachablity check, the radios should be warmed up and we can set a short socket connect timeout
+        //MARK - DashSync->CMNSync
         [self performSelector:@selector(disconnectWithError:)
-                   withObject:[NSError errorWithDomain:@"DashSync" code:DASH_PEER_TIMEOUT_CODE
+                   withObject:[NSError errorWithDomain:@"CMNSync" code:DASH_PEER_TIMEOUT_CODE
                                               userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Connect timeout", nil)}]
                    afterDelay:CONNECT_TIMEOUT];
         
@@ -343,7 +344,8 @@
     va_list args;
     
     va_start(args, message);
-    [self disconnectWithError:[NSError errorWithDomain:@"DashSync" code:500
+    //MARK - DashSync->CMNSync
+    [self disconnectWithError:[NSError errorWithDomain:@"CMNSync" code:500
                                               userInfo:@{NSLocalizedDescriptionKey:[[NSString alloc] initWithFormat:message arguments:args]}]];
     va_end(args);
 }
@@ -1962,7 +1964,8 @@
     static NSError * error;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        error = [NSError errorWithDomain:@"DashSync" code:DASH_PEER_TIMEOUT_CODE
+        //MARK - DashSync->CMNSync
+        error = [NSError errorWithDomain:@"CMNSync" code:DASH_PEER_TIMEOUT_CODE
                                 userInfo:@{NSLocalizedDescriptionKey:DSLocalizedString(@"Connect timeout", nil)}];
     });
     return error;
