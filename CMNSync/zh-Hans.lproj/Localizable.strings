@@ -9,43 +9,43 @@
 "\n\n     amount %@ (%@)" = "\n\n      金额%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\nCMN addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address";
+"\nADDRESS ALREADY USED\nDash addresses are intended for single use only\n\nre-use reduces privacy for both you and the recipient and can result in loss if the recipient doesn't directly control the address" = "\nADDRESS ALREADY USED\nCMN 地址仅供一次性使用\n\n重复使用会降低您和收件人的隐私，如果收件人无法直接控制地址，则可能导致资产丢失";
 
 /* No comment provided by engineer. */
 "\nnetwork fee +%@ (%@)" = "\n网络手续费+%1$@ (%2$@)";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to reclaim this masternode?" = "Are you sure you would like to reclaim this masternode?";
+"Are you sure you would like to reclaim this masternode?" = "是否确实要回收此主节点?";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to register a masternode at %@:%d?" = "Are you sure you would like to register a masternode at %1$@:%2$d?";
+"Are you sure you would like to register a masternode at %@:%d?" = "是否确实要在 %1$@:%2$d 注册主节点？";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to register the username %@ and spend %@ on credits?" = "Are you sure you would like to register the username %1$@ and spend %2$@ on credits?";
+"Are you sure you would like to register the username %@ and spend %@ on credits?" = "您确定要注册用户名 %1$@ 并在信用卡上花费 %2$@ 吗？";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to reset this user?" = "Are you sure you would like to reset this user?";
+"Are you sure you would like to reset this user?" = "是否确实要重置此用户?";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to topup %@ and spend %@ on credits?" = "Are you sure you would like to topup %1$@ and spend %2$@ on credits?";
+"Are you sure you would like to topup %@ and spend %@ on credits?" = "您确定要加满 %1$@ 并在信用卡上花费 %2$@ 吗?";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to update this masternode to %@:%d?" = "Are you sure you would like to update this masternode to %1$@:%2$d?";
+"Are you sure you would like to update this masternode to %@:%d?" = "是否确实要将此主节点更新为 %1$@:%2$d?";
 
 /* No comment provided by engineer. */
-"Are you sure you would like to update this masternode to pay to %@?" = "Are you sure you would like to update this masternode to pay to %@?";
+"Are you sure you would like to update this masternode to pay to %@?" = "是否确实要将此主节点更新为支付给 %@?";
 
 /* No comment provided by engineer. */
 "Bad password, try again" = "密码错误, 请重试";
 
 /* No comment provided by engineer. */
-"Bad payment request" = "Bad payment request";
+"Bad payment request" = "错误的付款请求";
 
 /* No comment provided by engineer. */
-"Bad payment request URL" = "Bad payment request URL";
+"Bad payment request URL" = "错误付款请求 URL";
 
 /* No comment provided by engineer. */
-"Bad payment URL" = "Bad payment URL";
+"Bad payment URL" = "错误的付款 URL";
 
 /* No comment provided by engineer. */
 "Cancel" = "取消";
@@ -60,34 +60,34 @@
 "Connect timeout" = "连接超时";
 
 /* No comment provided by engineer. */
-"Couldn't make payment" = "Couldn't make payment";
+"Couldn't make payment" = "无法付款";
 
 /* No comment provided by engineer. */
-"Dash payments can't be less than %@" = "CMN payments can't be less than %@";
+"Dash payments can't be less than %@" = "CMN付款不能小于 %@";
 
 /* No comment provided by engineer. */
-"Dash transaction not signed" = "CMN transaction not signed";
+"Dash transaction not signed" = "CMN 交易未签名";
 
 /* No comment provided by engineer. */
-"Dash transaction outputs can't be less than %@" = "CMN transaction outputs can't be less than %@";
+"Dash transaction outputs can't be less than %@" = "CMN 交易输出不能小于 %@";
 
 /* No comment provided by engineer. */
-"Devnet" = "Devnet";
+"Devnet" = "开发网络";
 
 /* No comment provided by engineer. */
 "Double spend" = "双重花费";
 
 /* The server is not working */
-"Down" = "Down";
+"Down" = "关闭";
 
 /* No comment provided by engineer. */
 "Enter old PIN" = "输入旧PIN";
 
 /* No comment provided by engineer. */
-"Error from payment request server %@" = "Error from payment request server %@";
+"Error from payment request server %@" = "付款请求服务器 %@ 出错";
 
 /* No comment provided by engineer. */
-"Error signing transaction" = "Error signing transaction";
+"Error signing transaction" = "签名交易时出错";
 
 /* No comment provided by engineer. */
 "Ignore" = "忽略";
@@ -96,76 +96,76 @@
 "Insufficient funds" = "资金不足";
 
 /* No comment provided by engineer. */
-"Insufficient funds for Dash network fee" = "Insufficient funds for CMN network fee";
+"Insufficient funds for Dash network fee" = "CMN网络上的资金不足";
 
 /* No comment provided by engineer. */
 "Internal Error" = "网络错误";
 
 /* No comment provided by engineer. */
-"Invalid DAPI Response" = "Invalid DAPI Response";
+"Invalid DAPI Response" = "无效的 DAPI 回应";
 
 /* No comment provided by engineer. */
-"Invalid Params" = "Invalid Params";
+"Invalid Params" = "无效参数";
 
 /* No comment provided by engineer. */
-"Invalid Request" = "Invalid Request";
+"Invalid Request" = "无效请求";
 
 /* No comment provided by engineer. */
-"Mainnet" = "Mainnet";
+"Mainnet" = "主网络";
 
 /* No comment provided by engineer. */
-"Method Not Found" = "Method Not Found";
+"Method Not Found" = "未找到方法";
 
 /* No comment provided by engineer. */
-"Missing certificate" = "Missing certificate";
+"Missing certificate" = "缺少证书";
 
 /* No comment provided by engineer. */
-"No attempts remaining" = "No attempts remaining";
+"No attempts remaining" = "没有剩余的尝试次数";
 
 /* No comment provided by engineer. */
-"No peers found" = "No peers found";
+"No peers found" = "未找到节点";
 
 /* No comment provided by engineer. */
 "Not a valid private key" = "无效的私钥";
 
 /* No comment provided by engineer. */
-"Not connected to the Dash network" = "Not connected to the CMN network";
+"Not connected to the Dash network" = "未连接到 CMN 网络";
 
 /* No comment provided by engineer. */
-"OK" = "OK";
+"OK" = "确定";
 
 /* No comment provided by engineer. */
-"Parse Error" = "Parse Error";
+"Parse Error" = "解析错误";
 
 /* No comment provided by engineer. */
-"Passcode" = "Passcode";
+"Passcode" = "密码";
 
 /* No comment provided by engineer. */
 "Password" = "密码";
 
 /* No comment provided by engineer. */
-"Password protected key" = "Password protected key";
+"Password protected key" = "密码保护密钥";
 
 /* No comment provided by engineer. */
-"Payee identity isn't certified" = "Payee identity isn't certified";
+"Payee identity isn't certified" = "收款人身份未经认证";
 
 /* No comment provided by engineer. */
-"PIN for %@" = "PIN for %@";
+"PIN for %@" = "PIN码 %@";
 
 /* Please authenticate to create your Testnet wallet */
-"Please authenticate to create your %@ wallet" = "Please authenticate to create your %@ wallet";
+"Please authenticate to create your %@ wallet" = "请验证以创建您的 %@ 钱包";
 
 /* No comment provided by engineer. */
 "Recovery phrase" = "恢复密语";
 
 /* No comment provided by engineer. */
-"Reduce payment amount by\n%@ (%@)?" = "Reduce payment amount by\n%1$@ (%2$@)?";
+"Reduce payment amount by\n%@ (%@)?" = "减少付款金额\n%1$@ (%2$@)?";
 
 /* No comment provided by engineer. */
-"Request expired" = "Request expired";
+"Request expired" = "请求已过期";
 
 /* No comment provided by engineer. */
-"Requested network \"%@\" not currently in use" = "Requested network \"%@\" not currently in use";
+"Requested network \"%@\" not currently in use" = "请求的网络 \"%@\” 当前未使用";
 
 /* No comment provided by engineer. */
 "Rescan" = "重新扫描";
@@ -174,13 +174,13 @@
 "Reset" = "重置";
 
 /* No comment provided by engineer. */
-"Server Error" = "Server Error";
+"Server Error" = "服务器错误";
 
 /* No comment provided by engineer. */
 "Set PIN" = "设置PIN";
 
 /* No comment provided by engineer. */
-"Testnet" = "Testnet";
+"Testnet" = "测试网络";
 
 /* No comment provided by engineer. */
 "This payment address is already in your wallet" = "该付款地址已经在您的钱包中";
@@ -195,16 +195,16 @@
 "Transaction canceled, network timeout" = "交易取消，网络超时";
 
 /* No comment provided by engineer. */
-"Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)";
+"Transaction fees would cost more than the funds available on this private key (due to tiny \"dust\" deposits)" = "交易费用将超过此私钥上可用的资金（由于小额“尘埃沉积”存款）";
 
 /* No comment provided by engineer. */
-"Transaction rejected" = "Transaction rejected";
+"Transaction rejected" = "交易被拒绝";
 
 /* No comment provided by engineer. */
-"Try again in %@" = "Try again in %@";
+"Try again in %@" = "再次尝试 %@";
 
 /* No comment provided by engineer. */
-"Unexpected response from %@" = "Unexpected response from %@";
+"Unexpected response from %@" = "意外响应来自 %@";
 
 /* No comment provided by engineer. */
 "Unknown address" = "未知的地址";
@@ -213,19 +213,19 @@
 "Unknown Error" = "未知错误";
 
 /* No comment provided by engineer. */
-"Unknown JSON-RPC Response" = "Unknown JSON-RPC Response";
+"Unknown JSON-RPC Response" = "未知的JSON-RPC响应";
 
 /* No comment provided by engineer. */
-"Unrecognized address" = "Unrecognized address";
+"Unrecognized address" = "无法识别的地址";
 
 /* No comment provided by engineer. */
-"Unsupported signature type" = "Unsupported signature type";
+"Unsupported signature type" = "不支持的签名类型";
 
 /* No comment provided by engineer. */
-"Untrusted certificate" = "Untrusted certificate";
+"Untrusted certificate" = "不可信证书";
 
 /* The server is up and running */
-"Up" = "Up";
+"Up" = "在线";
 
 /* Updating Price */
 "Updating Price" = "更新价格";
