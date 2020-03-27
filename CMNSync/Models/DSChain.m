@@ -101,7 +101,7 @@ static checkpoint mainnet_checkpoint_array[] = {
     {1500, "0000017191e6f72aab75e397360c8cec39141d09e6f35a23b04c2bf1c9d4cb10", 1584582379, 0x1e03ffffu, "", ""},
     {3000, "0000022a02a3fc8699e2dbae0cae9f09caa4e56801a08034e66e212b5181cb7c", 1584794357, 0x1e029514u, "", ""},
     {4500, "000001ec205cf91d6aed9e0199ad2dfd875591bc6b4415fa2ffddc6884bd4420", 1585017612, 0x1e0261abu, "", ""},
-    {5168, "0000006c5d7eb1ce1136e6bb35524cf42ee7599577be789f2a3334174f2c60a9", 1585114483, 0x1e028ccau, "", ""}
+    {6000, "000000418cf43756ee4ee97fe7695bcebeaf47faf86d4e8b0ab3fe4716ed1b2a", 1585250792, 0x1e02b00bu, "", ""}
 };
 //static checkpoint mainnet_checkpoint_array[] = {
 //    {       0, "00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6", 1390095618, 0x1e0ffff0u, "", "" },//dash
@@ -1576,14 +1576,15 @@ static dispatch_once_t devnetToken = 0;
     DSCheckpoint * lastCheckpoint = [self lastCheckpoint];
     
     if (!self.isDevnetAny) {
-        if ((block.height > (lastCheckpoint.height + DGW_PAST_BLOCKS_MAX)) &&
-            ![block verifyDifficultyWithPreviousBlocks:self.blocks]) {
-            uint32_t foundDifficulty = [block darkGravityWaveTargetWithPreviousBlocks:self.blocks];
-            DSDLog(@"%@:%d relayed block with invalid difficulty height %d target %x foundTarget %x, blockHash: %@", peer.host, peer.port,
-                  block.height,block.target,foundDifficulty, blockHash);
-            [self.chainManager chain:self badBlockReceivedFromPeer:peer];
-            return FALSE;
-        }
+        //MARK TODO - 判断测试难度，暂时注释，因为区块的高度不是一直增加的，需一直增加此判断才可以使用
+//        if ((block.height > (lastCheckpoint.height + DGW_PAST_BLOCKS_MAX)) &&
+//            ![block verifyDifficultyWithPreviousBlocks:self.blocks]) {
+//            uint32_t foundDifficulty = [block darkGravityWaveTargetWithPreviousBlocks:self.blocks];
+//            DSDLog(@"%@:%d relayed block with invalid difficulty height %d target %x foundTarget %x, blockHash: %@", peer.host, peer.port,
+//                  block.height,block.target,foundDifficulty, blockHash);
+//            [self.chainManager chain:self badBlockReceivedFromPeer:peer];
+//            return FALSE;
+//        }
     }
     
     DSCheckpoint * checkpoint = [self.checkpointsByHeightDictionary objectForKey:@(block.height)];
