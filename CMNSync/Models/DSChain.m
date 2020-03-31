@@ -73,7 +73,6 @@
 #import "DSQuorumEntryEntity+CoreDataProperties.h"
 
 typedef const struct checkpoint { uint32_t height; const char *checkpointHash; uint32_t timestamp; uint32_t target; const char * masternodeListPath; const char * merkleRoot;} checkpoint;
-
 static checkpoint testnet_checkpoint_array[] = {
     {           0, "00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c", 1390666206, 0x1e0ffff0u, "", "" },
     {        1500, "000002d7a07979a4d6b24efdda0bbf6e3c03a59c22765a0128a5c53b3888aa28", 1423460945, 0x1e03ffffu, "", "" },
@@ -97,11 +96,17 @@ static checkpoint testnet_checkpoint_array[] = {
 // difficulty transition boundaries in order to verify the block difficulty at the immediately following transition
 //MARK - 修改checkPoint
 static checkpoint mainnet_checkpoint_array[] = {
-    {0, "000007c92c6d84f06072d2e04f71c23e77b9a2b58cbd8a179847a1c536d63f65", 1575536787, 0x1e0ffff0u, "", "" },
-    {1500, "0000017191e6f72aab75e397360c8cec39141d09e6f35a23b04c2bf1c9d4cb10", 1584582379, 0x1e03ffffu, "", ""},
-    {3000, "0000022a02a3fc8699e2dbae0cae9f09caa4e56801a08034e66e212b5181cb7c", 1584794357, 0x1e029514u, "", ""},
-    {4500, "000001ec205cf91d6aed9e0199ad2dfd875591bc6b4415fa2ffddc6884bd4420", 1585017612, 0x1e0261abu, "", ""},
-    {6000, "000000418cf43756ee4ee97fe7695bcebeaf47faf86d4e8b0ab3fe4716ed1b2a", 1585250792, 0x1e02b00bu, "", ""}
+    //    {0, "000007c92c6d84f06072d2e04f71c23e77b9a2b58cbd8a179847a1c536d63f65", 1575536787, 0x1e0ffff0u, "", "" },
+    {1500, "0000063cb514a2cb9a19c537d5cab4cee459fbd1c8b48826c08b86d9bb78547d", 1577967633, 0x1e07af43u, "", ""},
+    {3000, "000003348823639280a7d0efff47ff3b204d9413ec1c1e757f63979ca074bb1d", 1578190178, 0x1e073129u, "", ""},
+    {4500, "000002c0f74e696e72d80b34ed55bbf038ff82df08b8b921b6f8b73cedc14cd2", 1578419246, 0x1e076c2bu, "", ""},
+    {6000, "000005671ba9c3e7f2e1494e5debb5e33e0d1304b2308562db49faa0f682b5b4", 1578637488, 0x1e06c5c0u, "", ""},
+    {9918, "0000068dc999bb41695fe20fe8c193d60eebdded786096ef21344e13be78ef87", 1579228611, 0x1e070402u, "", ""},
+    {16912, "0000016fd2db5c31661b926dbcedf1ea0555c077176898dee4fbdc7e66637d99", 1580290717, 0x1e078769u, "", ""},
+    {23912, "0000007ac0a25fcc1a53ec2e2beb0cf8b3e3f43be8ec3913c76cc727779721d5", 1581345763, 0x1e04d519u, "", ""},
+    {35457, "0000000d6c0692ce0ebd14bcbfbf27b469a2d9ad828ec98275e95ecb04a4e330", 1583095472, 0x1e079502u, "", ""},
+    {45000, "000004b31a4ca70e958bffd39857694d58fc581ee4431f795c2db3cc60dc4f66", 1584598282, 0x1e09bd1cu, "", ""},
+    {51000, "000004fa42b0ed12f6f69e7bec216a17de2aaf3ae91bfa859285877f3bb404b7", 1585543597, 0x1e0732adu, "", ""}
 };
 //static checkpoint mainnet_checkpoint_array[] = {
 //    {       0, "00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6", 1390095618, 0x1e0ffff0u, "", "" },//dash

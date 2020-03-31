@@ -180,9 +180,9 @@ NS_ASSUME_NONNULL_BEGIN
         }
     }
     //MARK - 打印数据
-    for (DSCurrencyPriceObject *currency in prices) {
-        NSLog(@"4----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
-    }
+//    for (DSCurrencyPriceObject *currency in prices) {
+//        NSLog(@"4----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+//    }
     self.fetchCompletion([prices copy], [self.class priceSourceInfo]);
 }
 

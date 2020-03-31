@@ -60,9 +60,9 @@ NS_ASSUME_NONNULL_BEGIN
 
     NSArray<DSCurrencyPriceObject *> *prices = self.sparkOperation.prices;
     //MARK - 打印数据
-    for (DSCurrencyPriceObject *currency in prices) {
-        NSLog(@"2---%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
-    }
+//    for (DSCurrencyPriceObject *currency in prices) {
+//        NSLog(@"2---%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+//    }
     self.fetchCompletion(prices, [self.class priceSourceInfo]);
 }
 

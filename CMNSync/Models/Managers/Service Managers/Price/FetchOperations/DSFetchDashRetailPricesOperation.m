@@ -62,14 +62,16 @@ NS_ASSUME_NONNULL_BEGIN
 
     NSArray<DSCurrencyPriceObject *> *prices = self.dashRetailOperation.prices;
     //MARK - 打印数据
-    for (DSCurrencyPriceObject *currency in prices) {
-        NSLog(@"1----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
-    }
+//    for (DSCurrencyPriceObject *currency in prices) {
+//        NSLog(@"1----%@ %@ %@ %@",currency.name,currency.code,currency.price,currency.codeAndName);
+//    }
     self.fetchCompletion(prices, [self.class priceSourceInfo]);
 }
 
 + (NSString *)priceSourceInfo {
-    return @"dashretail.org";
+     //MARK - 修改sorce
+        return @"codemason.xyz";
+    //    return @"dashretail.org";
 }
 
 @end

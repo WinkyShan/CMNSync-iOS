@@ -94,11 +94,11 @@
     NSString *s = [[string stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]]
                    stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     NSURL *url = [NSURL URLWithString:s];
-    
+    //MARK - 指定金额的收款地址复制修改dash->cmn
     if (! url || ! url.scheme) {
         if ([s isValidDashAddressOnChain:self.chain] || [s isValidDashPrivateKeyOnChain:self.chain] || [s isValidDashBIP38Key]) {
-            url = [NSURL URLWithString:[NSString stringWithFormat:@"dash://%@", s]];
-            self.scheme = @"dash";
+            url = [NSURL URLWithString:[NSString stringWithFormat:@"cmn://%@", s]];
+            self.scheme = @"cmn";
         }
 #if SHAPESHIFT_ENABLED
         else if ([s isValidBitcoinAddressOnChain:self.chain] || [s isValidBitcoinPrivateKeyOnChain:self.chain]) {
@@ -113,10 +113,10 @@
     } else if (url.scheme) {
         self.scheme = url.scheme;
     } else {
-        self.scheme = @"dash";
+        self.scheme = @"cmn";
     }
     
-    if ([url.scheme isEqualToString:@"dash"] || [url.scheme isEqualToString:@"bitcoin"]) {
+    if ([url.scheme isEqualToString:@"cmn"] || [url.scheme isEqualToString:@"bitcoin"]) {
         self.paymentAddress = url.host;
     
         //TODO: correctly handle unknown but required url arguments (by reporting the request invalid)
@@ -177,7 +177,7 @@
 
 - (NSString *)string
 {
-    if (! ([self.scheme isEqual:@"bitcoin"] || [self.scheme isEqual:@"dash"])) return self.r;
+    if (! ([self.scheme isEqual:@"bitcoin"] || [self.scheme isEqual:@"cmn"])) return self.r;
 
     NSMutableString *s = [NSMutableString stringWithFormat:@"%@:",self.scheme];
     NSMutableArray *q = [NSMutableArray array];
@@ -248,7 +248,7 @@
 
 - (BOOL)isValid
 {
-    if ([self.scheme isEqualToString:@"dash"]) {
+    if ([self.scheme isEqualToString:@"cmn"]) {
         BOOL valid = ([self.paymentAddress isValidDashAddressOnChain:self.chain] || (self.r && [NSURL URLWithString:self.r])) ? YES : NO;
         if (!valid) {
             DSDLog(@"Not a valid dash request");

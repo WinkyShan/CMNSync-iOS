@@ -64,10 +64,10 @@
 #endif
 
 //#define TESTNET_DNS_SEEDS @[@"testnet.codemason.xyz"]
-#define TESTNET_DNS_SEEDS @[@"testnet-seed.dashdot.io"]
+#define TESTNET_DNS_SEEDS @[@"testnet.codemason.xyz"]
 
 //MARK - 修改域名
-#define MAINNET_DNS_SEEDS @[@"testnet.codemason.xyz"]//159.138.47.96
+#define MAINNET_DNS_SEEDS @[@"mainnet.codemason.xyz"]//159.138.47.96
 //#define MAINNET_DNS_SEEDS @[@"dnsseed.dash.org",@"dnsseed.dashdot.io"]
 
 #define TESTNET_MAIN_PEER @""//@"52.36.64.148:19999"

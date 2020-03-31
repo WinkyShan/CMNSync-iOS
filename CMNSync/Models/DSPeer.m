@@ -194,14 +194,12 @@
 - (NSString *)host
 {
     //MARK - host ip
-//    char s[INET6_ADDRSTRLEN];
-//
-//    if (_address.u64[0] == 0 && _address.u32[2] == CFSwapInt32HostToBig(0xffff)) {
-//        return @(inet_ntop(AF_INET, &_address.u32[3], s, sizeof(s)));
-//    }
-//    else return @(inet_ntop(AF_INET6, &_address, s, sizeof(s)));
-    
-    return @"159.138.47.96";
+    char s[INET6_ADDRSTRLEN];
+
+    if (_address.u64[0] == 0 && _address.u32[2] == CFSwapInt32HostToBig(0xffff)) {
+        return @(inet_ntop(AF_INET, &_address.u32[3], s, sizeof(s)));
+    }
+    else return @(inet_ntop(AF_INET6, &_address, s, sizeof(s)));
 }
 
 - (void)connect
