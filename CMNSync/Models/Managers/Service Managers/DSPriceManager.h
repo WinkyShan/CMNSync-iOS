@@ -30,7 +30,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-#define DASH         @"DASH"     // capital D with stroke (utf-8)
+#define DASH         @"CMN"     // capital D with stroke (utf-8)
 #define BTC          @"\xC9\x83"     // capital B with stroke (utf-8)
 #define BITS         @"\xC6\x80"     // lowercase b with stroke (utf-8)
 #define DITS         @"mDASH"     // lowercase d with stroke (utf-8)

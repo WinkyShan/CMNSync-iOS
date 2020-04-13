@@ -111,7 +111,8 @@
     self.dashFormat.negativeFormat = [self.dashFormat.positiveFormat
                                       stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                       withString:@"-#"];
-    self.dashFormat.currencyCode = @"DASH";
+    //MARK - DASH->CMN
+    self.dashFormat.currencyCode = @"CMN";
     if (@available(iOS 13.0, *)) {
         self.dashFormat.currencySymbol = DASH;
     }
@@ -129,7 +130,8 @@
     self.dashSignificantFormat.negativeFormat = [self.dashFormat.positiveFormat
                                                  stringByReplacingCharactersInRange:[self.dashFormat.positiveFormat rangeOfString:@"#"]
                                                  withString:@"-#"];
-    self.dashSignificantFormat.currencyCode = @"DASH";
+    //MARK - DASH->CMN
+    self.dashSignificantFormat.currencyCode = @"CMN";
     if (@available(iOS 13.0, *)) {
         self.dashSignificantFormat.currencySymbol = DASH;
     }
